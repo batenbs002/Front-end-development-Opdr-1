@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overzichtspagina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body> 
+<header>
+ 
+    <!--Logo-->
+  
+   <h1>Transavia's Verhalenclub</h1>
+   
+</header>
+
+    <!--Main navigation in header-->
+   
+    <nav>
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profiel">Profiel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--Second Navigatie Zoekbalk-->
+    
+    <nav>
+        <form>
+           <fieldset>
+               <input type="search" name="search" placeholder="Zoek op titel of schrijver">
+               <input type="submit" value="Zoeken">
+           </fieldset>
+            
+        </form>
+    </nav>
+    
+    <!--Local navigation-->
+    
+    <nav>
+        <ul>
+        <li><a href="#aanbevolen">Aanbevolen</a></li>
+        <li><a href="#recenttoegevoegd">Recent toegevoegd</a></li> 
+        </ul>
+    </nav>
+
+<main>
+   
+   <!--Aanbevolen verhalen, main content-->
+   
+    <section>
+        <h2>Aanbevolen verhalen</h2>
+        <p>Er zijn deze week 10 aanbevolen verhalen.</p>
+        
+        <!--Sorteerfunctie-->
+        
+        <select>
+            <option>Sorteren
+                <option value="sorting">Alfabetisch A-Z</option>
+                <option value="sorting">Alfabetisch Z-A</option>
+                <option value="sorting">Meest gelezen</option>
+                <option value="sorting">Publicatie datum</option>
+        </select> 
+    </section>
+    
+    <!--Voorproefjes Aanbevolen verhalen-->
+    
+    <article>
+       <h3>#98 Beroemd</h3>
+       
+       <footer>
+       <p>Molovich, <time datetime="2011-07-11">2011-07-11</time></p></footer>
+       
+       <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt...</p>
+       
+       <!--Lees verhaal button-->
+       
+       <form> 
+            <input type="submit" value="Lees verhaal">
+            <input type="submit" value="Voeg toe in bibliotheek">
+       </form>
+        
+    </article>
+    
+    <article>
+       
+       <h3>#97 Freudiaans</h3>
+       
+       <footer>
+       <p>Molovich, <time datetime="2011-06-11">2011-07-06</time></p></footer>
+       <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen...</p>
+       
+       <!--Lees verhaal button-->
+       
+       <form> 
+            <input type="submit" value="Lees verhaal">
+            <input type="submit" value="Voeg toe in bibliotheek">
+       </form>
+        
+        
+    </article>
+    
+    <article>
+       
+       <h3>#96 Steenkolenfrans</h3>
+       
+       <footer>
+       <p>Molovich, <time datetime="2011-06-11">2011-07-04</time></p></footer>
+       
+       <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est un livre très dificile d’acquérir...</p>
+       
+       <!--Lees verhaal button-->
+       
+       <form> 
+            <input type="submit" value="Lees verhaal">
+            <input type="submit" value="Voeg toe in bibliotheek">
+       </form>
+        
+    </article>
+    
+</main>
+  
+   <!--Filteropties-->
+   
+    <aside>
+       <nav>
+       
+        <h4>Filteropties</h4>
+        
+        <h5>Leesniveau</h5>
+        
+        <!--Checkboxes Leesniveau-->
+        
+        <form action="submit">
+            <input type="checkbox" name="niveau" value="Easy">Makkelijk
+            <input type="checkbox" name="niveau" value="Easy">Gemiddeld
+            <input type="checkbox" name="niveau" value="Easy">Moeilijk
+        </form>
+        
+        
+        <h5>Aantal woorden</h5>
+        
+        <!--Checkboxes Aantal woorden-->
+        
+        <form action="submit">
+            <input type="checkbox" name="aantalwoorden" value="minder dan 500"> Minder dan 500 woorden
+            <input type="checkbox" name="aantalwoorden" value="1000+ woorden">1000+ woorden
+            <input type="checkbox" name="aantalwoorden" value="2500+ woorden">2500+ woorden
+        </form>
+        
+        <h5>Taal</h5>
+        
+        <!--Checkboxes Taal-->
+        
+        <form action="submit">
+            <input type="checkbox" name="taal" value="Nederlands"> Nederlands
+            <input type="checkbox" name="taal" value="Nederlands Dialect">Nederlands Dialect
+            <input type="checkbox" name="taal" value="Frans">Frans
+        </form>
+        
+        <!--Filter button-->
+        
+        <input type="submit" value="Filter">
+        
+        </nav>
+    </aside>
+    
+
+</body>
+
+</html>

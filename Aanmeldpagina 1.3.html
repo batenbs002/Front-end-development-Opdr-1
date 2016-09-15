@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Aanmeldpagina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+</head>
+
+<body>
+  
+   <header>
+ 
+  <!--Logo-->
+  
+   <h1>Transavia's Verhalenclub</h1>
+   
+</header>
+
+<!--Main navigation in header-->
+   
+    <nav>
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profiel">Profiel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--Second Navigatie Zoekbalk-->
+    
+    <nav>
+        <form>
+           <fieldset>
+               <input type="search" name="search" placeholder="Zoek op titel of schrijver">
+               <input type="submit" value="Zoeken">
+           </fieldset>
+            
+        </form>
+    </nav>
+    
+    <!--Local navigation-->
+    
+    <nav>
+        <ul>
+        <li><a href="#aanbevolen">Aanbevolen</a></li>
+        <li><a href="#recenttoegevoegd">Recent toegevoegd</a></li> 
+        </ul>
+    </nav>
+    
+    <!--Aanmeld formulier-->
+    
+   <main>
+   
+   <!--Persoonsgegevens-->
+   
+   <form>
+       <fieldset>
+            <legend>Persoonsgegevens</legend>
+             
+                <label for="Voornaam">Voornaam:</label>
+                <input name="Voornaam" type="text" placeholder="Anna"  required autofocus>
+               
+                <label for="Tussenvoegsel">Tussenvoegsel:</label>
+                <input name="Tussenvoegsel" type="text" placeholder="de">
+               
+                <label for="Achternaam">Achternaam:</label>
+                <input name="Achternaam" type="text" placeholder="Wit">
+               
+                <label for="Geboortedatum">Geboortedatum:</label>
+                <input name="Geboortedatum" type="date">
+               
+                <label for="E-mail">E-mail:</label>
+                <input name="E-mail" type="email" placeholder="annadewit@gmail.com"> 
+                
+                <label for="Reset"></label> 
+                <input type="reset" value="Reset">
+               
+           </fieldset>
+       
+   </form>
+   
+   <!--Adresgegevens-->
+   
+   <form>
+       <fieldset>
+           
+            <legend>Adresgegevens</legend>
+             
+                <label for="Straatnaam">Straatnaam:</label>
+                <input name="Straatnaam" type="text" placeholder="Herengracht">
+               
+                <label for="Postcode">Postcode:</label>
+                <input name="Postcode" type="text" placeholder="1234AA">
+               
+                <label for="Huisnummer">Huisnummer:</label>
+                <input name="Huisnummer" type="number" placeholder="10">
+               
+                <label for="Toevoeging">Toevoeging</label>
+                <input name="Toevoeging" type="text" placeholder="A">
+               
+                <label for="Telefoonnummer">Telefoonnummer:</label>
+                <input name="Telefoonnummer" type="number" placeholder="1234-123456">
+                
+                <label for="Mobielnummer">Mobielnummer:</label>
+                <input name="Mobielnummer" type="number" placeholder="06-12345678">    
+             
+                <label for="Reset"></label> 
+                <input type="reset" value="Reset">
+                 
+           </fieldset>
+       
+       </form>
+       
+       <form>
+       
+       <fieldset>
+            <legend>Gebruikersgegevens</legend>
+             
+                <label for="Gebruikersnaam">Gebruikersnaam:</label>
+                <input name="Gebruikersnaam" type="text" placeholder="Anna123">
+               
+                <label for="Wachtwoord">Wachtwoord:</label>
+                <input name="Wachtwoord" type="password" placeholder="XXXXXXXXXXX">
+               
+                <label for="Herhaal wachtwoord">Herhaal wachtwoord:</label>
+                <input name="Herhaal wachtwoord" type="password" placeholder="XXXXXXXXXXX">  
+             
+                <label for="Reset"></label> 
+                <input type="reset" value="Reset">
+                 
+           </fieldset>
+       
+       </form>
+    </main>
+    
+    
+</body>
+</html>
