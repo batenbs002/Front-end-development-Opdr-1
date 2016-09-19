@@ -1,23 +1,69 @@
+/*1em=16px*/
+
+@keyframes rotate{
+0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+
+
+}
+
+
+@keyframes skew{
+0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(360deg);
+  }
+}
+
+
 body{
     font-size: 1.1em;
     margin: 4em;
+    font-family: sans-serif;
+    background-color: hsla(150, 100%, 42%, 0.05);
+    
+   
 }
 
 article{
     display: inline-block;
     float: left;
     position:relative;
+    animation: skew 5s;
+    columns: 10em 2;
+    
     
     
 }
 
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+}
+
+
 h1{
     font-size: 3.998em;
-    
+    text-shadow: 1px 1px 1px #2800a0, 
+               3px 3px 5px grey; 
 }
 
 h2{
     font-size: 2.827em;
+    border: 4px solid;
+    border-color: #ff3268;
+    border-radius: .5em;
+    background-color: #ff3268;
+    color: white;
+    padding: .5em;
     
 }
 
@@ -38,17 +84,40 @@ h5{
 
 p{
     max-width: 30em;
+    border-color: #ff3268;
+    border-radius: .5em;
+    background-color: #ff3268;
+    color: white;
+    padding: .5em;
+    box-shadow: 5px 2px 20px 2px #ccc;
+    transition: background-color 0.5s ease;
 
 }
 
+p:hover{
+    background-color: hsla(150, 100%, 42%, 0.6);
+    
+}
+
+/*
 .beroemd{
     columns: 10em 2;
     
 }
+*/
 
 aside{
     position: relative;
-    
+    float: right;
+    background-color: hsla(150, 100%, 42%, 1);
+    border-color: #00d66c;
+    border-radius: .5em;
+    border-style: dotted;
+    box-shadow: 5px 10px 15px 5px #ccc;
+    animation: rotate 10s infinite;   
     
 }
+form{
+    background-color: hsla(150, 100%, 42%, 0.05);
     
+}
